@@ -118,13 +118,13 @@ extern const uint8_t mark433_pin;
 #endif
 
 #if defined (nanoCUL868)
-#  define HAS_ASKSIN_FUP
-#  define HAS_MORITZ
-#  define HAS_RWE
-#  define HAS_ESA
-#  define HAS_HOERMANN
-#  define HAS_HMS
-#  define OFF_LACROSSE_HMS_EMU          // if you like HMS emulation for LaCrosse temp devices
+#  define NO_HAS_ASKSIN_FUP
+#  define NO_HAS_MORITZ
+#  define NO_HAS_RWE
+#  define NO_HAS_ESA
+#  define NO_HAS_HOERMANN
+#  define NO_HAS_HMS
+#  define LACROSSE_HMS_EMU          // if you like HMS emulation for LaCrosse temp devices
 #endif
 
 #endif

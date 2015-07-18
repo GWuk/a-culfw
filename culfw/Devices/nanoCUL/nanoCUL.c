@@ -93,6 +93,9 @@ const PROGMEM t_fntab fntab[] = {
 #ifdef HAS_MORITZ
   { 'Z', moritz_func },
 #endif
+#ifdef HAS_RFNATIVE
+  { 'N', native_func },
+#endif
 #ifdef HAS_RWE
   { 'E', rwe_func },
 #endif
@@ -101,6 +104,9 @@ const PROGMEM t_fntab fntab[] = {
 #endif  
 #ifdef HAS_ONEWIRE
   { 'O', onewire_func },
+#endif
+#ifdef HAS_BELFOX
+  { 'L', send_belfox },
 #endif
 #ifdef HAS_RAWSEND
   { 'G', rawsend },
