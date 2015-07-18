@@ -51,6 +51,7 @@
     <a href="#cmd_i">i</a>
     <a href="#cmd_M">M</a>
     <a href="#cmd_N">N</a>
+    <a href="#cmd_L">L</a>
     <a href="#cmd_l">l</a>
     <a href="#cmd_O">O</a>
     <a href="#cmd_o">o</a>
@@ -597,6 +598,23 @@
       </ul>
       Just "N" returns active mode. 
       <br><br>
+
+    <a name="cmd_L"></a>
+    L&lt;code&gt;
+    <ul>
+      Send BelFox door opener code: xxxxxxxxxxyy
+      <ul>
+        <li>xxxxxxxxxx ... 10bit DIP code (resembles the positions of the DIP switches inside the sender)</li>
+        <li>        yy ...  2bit button code</li>
+        <ul>
+          <li>11 .. top button</li>
+          <li>01 .. bottom button</li>
+        </ul>
+      </ul>
+      Example: L101001100111 - DIP switches in position 1010011001, top button </br>
+      see also <a href="http://forum.fhem.de/index.php?topic=36810.msg291267">forum thread</a> (in german)
+    </ul><br><br>
+
 
     <a name="cmd_l"></a>
     l&lt;hex&gt;
